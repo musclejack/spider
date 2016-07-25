@@ -58,7 +58,7 @@ function finder(err,sres){
     $('.zm-list-avatar').each(function(idx,element){
         $img = $(element).attr('src');
         if(!contains($img)){
-            fs.appendFile('E:/test.html', '<img src = "'+$img+'"/>', function (data) {
+            fs.appendFile('test.html', '<img src = "'+$img+'"/>', function (data) {
                 imgnum++;
             });
         } 
